@@ -14,23 +14,25 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Praktikum 1
+Langkah 1
+Kita mencoba membuat tombol sederhana yang belum bisa melakukan apa-apa alias belum kita buat event handler untuk tombol tersebut. Sebagai contoh, berikut adalah sebuah tombol yang belum melakukan apa pun. Kita buat folder/file baru di src/component/button.tsx
+![alt text](image.png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Selanjutnya pada file src/app/page.tsx kita ubah menjadi seperti berikut
+![alt text](image-1.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Kemudian kita jalankan perintah "npm run dev" dan kita buka alamat localhost:3000 pada browser. Maka akan tampil hasil seperti berikut
+![alt text](image-2.png)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Langkah 2
+Kita bisa menambahkan event pada tombol tersebut. Seperti contoh kita buat ketika tombol di klik, akan memunculkan notif/alert. Kita dapat membuat pesan ketika pengguna mengeklik dengan mengikuti tiga langkah berikut:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Deklarasikan sebuah fungsi bernama handleClick di dalam komponen Button kita.
+Implementasikan logika di dalam fungsi tersebut (gunakan alert untuk menampilkan pesan).
+Tambahkan handler onClick={handleClick} ke tag JSX < button >
+![alt text](image-3.png)
+![alt text](image-6.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
